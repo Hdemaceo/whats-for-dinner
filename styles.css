@@ -8,3 +8,140 @@ red - #ee5253
 
 */
 
+.hidden {
+  display: none;
+}
+
+body {
+  /* font: bold, 'Roboto', sans-serif; */
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.title {
+  background-color: #0fb9b1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 25px 0px 25px;
+  position: relative;
+}
+h3 {
+  font-size: 1.5em;
+}
+
+.add-recipe {
+  border-radius: 5px;
+  font-size: 1.0em;
+  /* background-color: white; */
+  border: none;
+  height: 45px;
+  width: 140px;
+}
+
+.burger-friends {
+  position: absolute;
+  width: 1664px;
+  /* height: 1261px;
+  width: 550.156px; */
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  /* opacity: 99%; */
+}
+
+.box1 {
+  background-color: rgba(225, 225, 225, .9);
+  width: 500px;
+  height: 400px;
+  /* font-weight: bold; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 30px;
+  position: relative;
+}
+
+h2 {
+  font-size: 2.0em;
+  font-weight: bold;
+  /* padding-bottom: 0px; */
+}
+
+b {
+  color: #ee5253;
+}
+
+.options {
+  font-size: 1.2em;
+  /* font-weight: bolder; */
+  /* padding-top: 10px; */
+}
+
+
+/* .circle-button{
+  border-radius: 100%;
+  width: 10px;
+  height: 15px;
+} */
+
+.lets-cook {
+  background-color: #0fb9b1;
+  border-radius: 5px;
+  border: none;
+  width: 220px;
+  height: 40px;
+  /* font-weight:bold; */
+  font-size: 1.0em;
+}
+
+.box2 {
+  background-color: rgba(225, 225, 225, .9);
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  position: relative;
+}
+
+.dish {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h4 {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+.clear-button {
+  background-color: #95a5a6;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  width: 80px;
+  height: 35px;
+}
+
+.clear-button-section {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+svg {
+  height: 200px;
+}
