@@ -5,39 +5,41 @@
   </head>
   <body>
     <img class="burger-friends" src="assets/burger-friends.jpg"/>
-    <section class="title">
-      <h3>Whats for Dinner?</h3>
-      <button class="add-recipe">ADD A RECIPE</button>
+    <!-- <section class="title-container"> -->
+      <section class="title">
+        <h3>Whats for Dinner?</h3>
+        <button class="add-recipe">ADD A RECIPE</button>
+      <!-- </section> -->
     </section>
     <section class ="boxes">
-      <!-- <img class="burger-friends-image" src="assets/burger-friends.jpg"/> -->
       <section class="box1">
         <h2>What are you looking for?<b>*</b></h2>
         <div class = "options">
-          <input type="radio" id="side" name="meal" value="side">
+          <input type="radio" class="dish-options" name="meal" id="side" value="side">
           <label for="side">Side</label>
         </div>
         <div class = "options">
-          <input type="radio" id="main" name="meal" value="main">
+          <input type="radio" class="dish-options" name="meal" id="main" value="main">
           <label for="main">Main Dish</label>
         </div>
         <div class = "options">
-          <input type="radio" id="dessert" name="meal" value="dessert">
+          <input type="radio" class="dish-options" name="meal" id="dessert" value="dessert">
           <label for="dessert">Dessert</label>
         </div>
         <div class = "options">
-          <input type="radio" id="entire-meal" name="meal" value="entire-meal">
+          <input type="radio" class="dish-options" name="meal" id="entire-meal" value="entire meal">
           <label for="entire-meal">Entire Meal</label>
         </div>
-        <!-- <div class="option"><button class="circle-button"></button> Side</div>
-        <div class="option"><button class="circle-button"></button> Main Dish</div> -->
-        <!-- <div class="option"><button class="circle-button"></button> Dessert</div>
-        <div class="option"><button class="circle-button"></button> Entire Meal</div> -->
-        <button class="lets-cook">LET'S COOK!</button>
+        <button class="lets-cook" disabled>LET'S COOK!</button>
+        <button class="meal-button hidden" disabled>LET'S COOK!</button>
       </section>
       <section class="box2">
-        <div class="dish hidden" id="dish">
-          
+        <section class="container">
+          <div class="dish hidden" id="dish">
+          </div>
+        </section>
+        <div class="clear-section">
+          <button class="clear-button hidden" onclick=location.reload()>CLEAR</button>
         </div>
         <div class = "cooking-pot">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
@@ -46,14 +48,21 @@
         </div>
       </section>
     </section>
-    <section class="footer hidden">
-      <input type="text" id="footer" name="meal" value="recipe-type">
-      <label for="recipe-type">Recipe Type:</label>
-      <input type="text" id="footer" name="meal" value="recipe-name">
-      <label for="recipe-type">Recipe Name:</label>
+    <footer class="recipe-form">
+      <label for="recipe-type" class="recipe-type">Recipe Type:</label>
+      <input type="text" class="type-input" name="recipe-type" list="listTypes">
+      <datalist id="listTypes">
+        <option value="Side">
+        <option value="Main Dish">
+        <option value="Dessert">
+        <option value="Entire Meal">
+      </datalist>
+      <label for="recipe-type" class="recipe-name">Recipe Name:</label>
+      <input type="text" class="name-input" name="recipe-name" value="">
       <button class="add-new">ADD NEW</button>
-    </section>
+    </footer>
   </body>
   <script type="text/javascript" src="foods.js"></script>
+  <script type="text/javascript" src="mealclass.js"></script>
   <script type="text/javascript" src="main.js"></script>
 </html>

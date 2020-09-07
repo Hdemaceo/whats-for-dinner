@@ -1,11 +1,9 @@
 /* font-family: 'Roboto', sans-serif;
-
 COLORS
 teal - #0fb9b1;
 frosted white - rgba(225, 225, 225, .9);
 grey - #95a5a6;
 red - #ee5253
-
 */
 
 .hidden {
@@ -13,63 +11,72 @@ red - #ee5253
 }
 
 body {
-  /* font: bold, 'Roboto', sans-serif; */
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
+
+/* HEADER SECTION: */
+
 .title {
   background-color: #0fb9b1;
   display: flex;
+  width: 100%;
+  height: 90px;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 25px 0px 25px;
-  position: relative;
+  position: absolute;
+  top: 0;
+
 }
+
 h3 {
   font-size: 1.5em;
+  position: absolute;
+  left: 20;
 }
 
 .add-recipe {
   border-radius: 5px;
   font-size: 1.0em;
-  /* background-color: white; */
   border: none;
   height: 45px;
   width: 140px;
+  position: absolute;
+  right: 20;
+}
+
+
+/* MAIN SECTION */
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  padding: 200px;
 }
 
 .burger-friends {
   position: absolute;
-  width: 1664px;
-  /* height: 1261px;
-  width: 550.156px; */
+  width: 100%;
+  height:100%;
 }
 
-.boxes {
-  display: flex;
-  justify-content: space-around;
-  padding: 50px;
-  /* opacity: 99%; */
-}
 
+/* BOX ONE SECTION: */
 .box1 {
   background-color: rgba(225, 225, 225, .9);
   width: 500px;
   height: 400px;
-  /* font-weight: bold; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
   padding: 30px;
-  position: relative;
 }
 
 h2 {
   font-size: 2.0em;
   font-weight: bold;
-  /* padding-bottom: 0px; */
 }
 
 b {
@@ -78,16 +85,7 @@ b {
 
 .options {
   font-size: 1.2em;
-  /* font-weight: bolder; */
-  /* padding-top: 10px; */
 }
-
-
-/* .circle-button{
-  border-radius: 100%;
-  width: 10px;
-  height: 15px;
-} */
 
 .lets-cook {
   background-color: #0fb9b1;
@@ -95,35 +93,70 @@ b {
   border: none;
   width: 220px;
   height: 40px;
-  /* font-weight:bold; */
   font-size: 1.0em;
 }
 
+.meal-button {
+  background-color: #0fb9b1;
+  border-radius: 5px;
+  border: none;
+  width: 220px;
+  height: 40px;
+  font-size: 1.0em;
+}
+
+/* BOX TWO SECTION: */
 .box2 {
   background-color: rgba(225, 225, 225, .9);
   width: 500px;
   height: 400px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   padding: 30px;
-  position: relative;
 }
 
-.dish {
+svg {
+  height: 200px;
+  padding-left: 170;
+  padding-bottom: 170;
+}
+
+.container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding-top: 100px;
+}
+
+ .dish {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  align-content: center;
 }
 
-h1 {
-  font-size: 2.5em;
-}
-
-h4 {
+.statement {
   font-size: 1.2em;
   font-style: italic;
+  padding-top: 40px;
+}
+
+.chosen-dish {
+  font-size: 2.5em;
+  padding-top: 20px;
+}
+
+.chosen-meal {
+  font-size: 1.6em;
+  padding-top: 20px;
+}
+
+.clear-section {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+  padding-top: 130px;
+
 }
 
 .clear-button {
@@ -132,16 +165,53 @@ h4 {
   border-radius: 5px;
   border: none;
   width: 80px;
-  height: 35px;
+  height: 40px;
 }
 
-.clear-button-section {
+
+/* FOOTER SECTION: */
+footer {
   display: flex;
-  flex-direction: column-reverse;
+  background-color: rgba(225, 225, 225, .9);
+  width: 100%;
+  height: 70px;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
 }
 
-svg {
-  height: 200px;
+.recipe-type {
+  position: absolute;
+  left: 50;
+}
+.type-input{
+  position: absolute;
+  left: 150;
+  height: 35px;
+  width: 180px;
+}
+
+.recipe-name {
+  position: absolute;
+  left: 340;
+}
+
+.name-input{
+  position: absolute;
+  left: 450;
+  height: 35px;
+  width: 180px;
+}
+
+.add-new {
+  background-color: #0fb9b1;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  left: 660;
+
 }
