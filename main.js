@@ -86,8 +86,8 @@ function displayDish() {
   dish.classList.remove("hidden");
   clearButton.classList.remove("hidden");
   dish.insertAdjacentHTML("afterbegin", `
-  <a class="statement">You should make:</h4>
-  <a class="chosen-dish">${currentDish}!</h1>
+  <a class="statement">You should make:</a>
+  <a class="chosen-dish">${currentDish}!</a>
   `);
   disableLetsCookButton();
 }
@@ -120,8 +120,8 @@ function displayEntireMeal() {
   dish.classList.remove("hidden");
   clearButton.classList.remove("hidden");
   dish.insertAdjacentHTML("afterbegin", `
-  <a class="statement">You should make:</h4>
-  <a class="chosen-meal">${currentDish.main} with a side of ${currentDish.side} and a ${currentDish.dessert} for dessert!</h1>
+  <a class="statement">You should make:</a>
+  <a class="chosen-meal">${currentDish.main} with a side of ${currentDish.side} and a ${currentDish.dessert} for dessert!</a>
   `);
   hideMealButton();
 }
